@@ -1,0 +1,2 @@
+- test blue and red ball together (if it can isolate a certain color)
+- blob detection for two or more same color right next to each other?????
