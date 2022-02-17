@@ -38,10 +38,11 @@ def hough_transform(img: np.ndarray) -> np.ndarray:
 
 	return circles, mask
 
-def 
-
 if __name__ == '__main__':
-	vid = cv2.VideoCapture(0)
+
+	# try different backedns with cv2.CAP_DSHOW	because 2 webcams might be too much or smthing
+	# remove if not working to test
+	vid = cv2.VideoCapture(1, cv2.CAP_ANY)
 
 	luffy_face = cv2.imread('./luffy_face.jpg')
 	luffy_face = cv2.resize(luffy_face, (100, 100))
